@@ -1,0 +1,82 @@
+/* Màu chủ đạo Tiệm Bánh Ngọt Ngào */
+:root {
+  --primary-color: #FFB6B9; /* Hồng pastel */
+  --primary-hover: #fa9c9f;
+  --secondary-color: #FAE3D9; /* Cam pastel nhẹ */
+  --bg-color: #FFF5E1; /* Nền trắng kem */
+  --text-color: #8b5e3c; /* Nâu cà phê */
+  --text-light: #b08d74;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px; /* Bo tròn mềm mại hơn */
+  font-weight: bold;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 182, 185, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 182, 185, 0.4);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--text-color);
+  color: #fff;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #6b462c;
+}
